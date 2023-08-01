@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+
+    body {
+        background-color: rgba(128, 128, 128, 0.5)
+    }
+}
+
+
+@layer components {
+
+    .type:nth-child(odd),
+    .ability:nth-child(odd) {
+        @apply bg-blue-600 py-[3px] px-2 rounded-lg capitalize
+    }
+
+    .type:nth-child(even),
+    .ability:nth-child(even) {
+        @apply bg-red-600 py-[3px] px-2 rounded-lg capitalize
+    }
+
+
+    /* .type:nth-of-type(2),
+    .ability:nth-of-type(2) {
+        @apply bg-blue-600 py-[3px] px-2 rounded-lg
+    } */
+
+    .items:nth-child(even) {
+        @apply bg-purple-600 py-[3px] px-2 rounded-lg capitalize
+    }
+
+    .items:nth-child(odd) {
+        @apply bg-orange-600 py-[3px] px-2 rounded-lg capitalize
+    }
+}
